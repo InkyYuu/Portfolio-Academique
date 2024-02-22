@@ -1,0 +1,106 @@
+:root {
+    /* Couleur pour le site */
+    --viridian: #547E5E;
+    --brunswickGreen: #2B5C4A;
+    --bistre: #35291C;
+    --coffee: #6A5138;
+    --rawUmber: #93704D;
+    --lion: #BA956F;
+    --umber: #6e5944;
+    --parchment: #F4E9CD;
+    --tan: #D2B48C;
+
+    /* Couleur des langages de programmation */
+    --html5: #E34F26;
+    --css3: #1572B6;
+    --js: #F7DF1E;
+    --php: #777BB4;
+    --java: #007396;
+    --c: #A8B9CC;
+    --sql1: #FFA500;
+    --sql2: #0070BA;
+    --python1: #3776AB;
+    --python2: #FFD43B;
+    --csharp: #68217A;
+    --serveur: #79ba00;
+    --github: #1b1b1b;
+    --jira: #0052CC;
+    --figma1: #FF7262;
+    --figma2: #1ABCFE;
+    --figma3: #A259FF;
+    --figma4: #0ACF83;
+
+    /* Dimension pour la zone projet */
+    --project-card: 500px;
+    --bloc-title: calc(var(--project-card)/5*2);
+    --project-bloc-card: calc(var(--project-card)*2);
+    --project-container-width: calc(var(--project-bloc-card)*1.10);
+    --project-container-height: calc(var(--project-card)*1.10);
+    --project-bloc-width: calc(var(--project-container-width) + calc(var(--project-card)/2));
+    --project-bloc-height: calc(var(--project-container-height) + calc(var(--project-card)/5));
+}
+
+.exo-font {
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.advent-pro-font {
+    font-family: "Advent Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C7B294;
+}
+
+.title-part {
+    text-align: center;
+    font-size: 6vw;
+    color: var(--brunswickGreen);
+    text-shadow: 5px 5px 2px var(--viridian);
+}
+
+@media (max-width: 1450px) {
+    :root {
+        --project-card: 400px;
+    }
+}
+
+@media (max-width: 1250px) {
+    :root {
+        --project-card: 300px;
+    }
+}
+
+@media (max-width: 900px) {
+    :root {
+        --project-card: 500px;
+    }
+}
+
+@media (max-width: 750px) {
+    :root {
+        --project-card: 400px;
+    }
+}
+
+@media (max-width: 650px) {
+    :root {
+        --project-card: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    :root {
+        --project-card: 200px;
+    }
+}

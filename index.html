@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadatas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kellian Bredeau"/>
+    <meta name="description" itemprop="description" content="Bienvenue sur le Portfolio d'un jeune étudiant en informatique qui rêve d'en faire son métier.">
+    <meta name="keywords" itemprop="keywords" content="portfolio, informatique, développement, BUT, Kellian, Bredeau, étudiant, développeur, game developper, études">
+    <!-- Page info -->
+    <title>Portfolio Home</title>
+    <!-- Sheet CSS -->
+    <link rel="stylesheet" href="Assets/css/variable.css">
+    <link rel="stylesheet" href="Assets/css/navbar.css">
+    <link rel="stylesheet" href="Assets/css/project.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wdth,wght@0,100..200,100..900;1,100..200,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="toggle-btn">
+                <i class='bx bx-plus'></i>
+            </div>
+            <span style="--i:1;">
+                <a text="Home" href="#"><i class='bx bxs-home'></i></a>
+            </span>
+            <span style="--i:2;">
+                <a href="#"><i class='bx bxs-camera'></i></a>
+            </span>
+            <span style="--i:3;">
+                <a href="#"><i class='bx bxs-alarm'></i></a>
+            </span>
+            <span style="--i:4;">
+                <a href="#"><i class='bx bxs-map'></i></a>
+            </span>
+        </div>
+    </nav>
+
+    <div class="part">
+        <h1 class="title-part advent-pro-font">Projets et Compétences</h1>
+        <div class="all-projects">
+            <div class="filter-bloc exo-font"></div>
+        </div>
+    </div>
+
+    <div class="templates">
+        <!-- Template de bloc de projets -->
+        <template id="project-bloc-template">
+            <div class="projects-bloc" data-bloc="">
+                <div class="rotate-title">
+                    <h3 class="title-bloc advent-pro-font"></h3>
+                </div>
+                <div class="projects-with-filter">
+                    <div class="filter-date exo-font"></div>
+                    <div class="projects-container"></div>
+                </div>
+            </div>
+        </template>
+        <!-- Modèle de filtre par bloc -->
+        <template id="filter-bloc-template">
+            <div class="filter-bouton-bloc" data-bloc="">
+                <h4></h4>
+            </div>
+        </template>
+        <!-- Template de filtre par date -->
+        <template id="filter-date-template">
+            <div class="filter-bouton-date" data-date="">
+                <h4></h4>
+            </div>
+        </template>
+        <!-- Template de projet -->
+        <template id="project-card-template">
+            <div class="project" data-date="" onmouseover="disableHoverEffect(this)" onclick="preventExplanation(this)">
+                <div class="card">
+                    <video class="background-video" autoplay loop muted>
+                        <source src="" type="video/mp4">
+                    </video>
+                    <div class="header">
+                        <a class="card-logo" href=""><img class="card-logo github-logo" src="Assets/img/github-logo.png"><span class="github-tooltip">GitHub</span></a>
+                        <img class="card-logo project-logo" src="">
+                    </div>
+                    <div class="footer"></div>
+                </div>
+                <div class="explanation">
+                    <div class="text-explanation">
+                        <h5 class="project-name advent-pro-font"></h5><br>
+                        <p class="project-description exo-font"></p>
+                    </div>
+                    <div class="arrowBox">
+                        <img class="arrowIcon" src="Assets/img/chevron-double.png" alt="double chevron">
+                    </div>
+                </div>
+            </div>
+        </template>
+        <!-- Template de tag -->
+        <template id="tag-template">
+            <div class="tag exo-font">
+                <div class="circle-color "></div>
+                <h6></h6>
+            </div>
+        </template>
+    </div>
+
+    <!-- Script JS -->
+    <script src="Data/project-data.js"></script>
+    <script src="Assets/js/script.js"></script>
+</body>
+<!-- Credit 
+    <a href="https://www.flaticon.com/fr/icones-gratuites/double-chevron" title="double chevron icônes">Double chevron icônes créées par th studio - Flaticon</a> -->
+
+</html>
