@@ -109,25 +109,13 @@ function filterProjectsByBloc(button) {
 }
 
 // Partie : Explication de projet
-// Fonction pour ouvrir ou fermer l'explication d'un projet
-function openExplanation(project) {
-    var explanation = project.querySelector('.explanation');
-    var card = project.querySelector('.card');
-    var footer = project.querySelector('.footer');
-    var arrow = project.querySelector('.arrowIcon');
-    explanation.classList.toggle('active');
-    card.classList.toggle('active');
-    footer.classList.toggle('active');
-    explanation.classList.toggle('disableHover');
-    arrow.classList.toggle('active');
-}
-
 // Fonction pour désactiver les effets de survol lorsque la souris est sur le logo GitHub
 function disableHoverEffect(project) {
     var githubLogo = project.querySelector('.github-logo');
     var explanation = project.querySelector('.explanation');
     var card = project.querySelector('.card');
     githubLogo.addEventListener('mouseenter', function () {
+        console.log("enter");
         explanation.classList.add('disableHover');
         card.classList.add('disableHover');
     });
@@ -138,11 +126,45 @@ function disableHoverEffect(project) {
 }
 
 // Fonction pour prévenir l'explication lorsque la souris est hors du logo GitHub
-function preventExplanation(project) {
-    var githubLogo = project.querySelector('.github-logo');
+function preventExplanationOpen(card) {
+    var githubLogo = card.querySelector('.github-logo');
     var target = event.target;
     if (!githubLogo.contains(target)) {
-        openExplanation(project);
+        var project = card.parentElement;
+        var explanation = project.querySelector('.explanation');
+        var card = project.querySelector('.card');
+        var footer = project.querySelector('.footer');
+        var arrow = project.querySelector('.arrowIcon');
+        explanation.classList.toggle('active');
+        card.classList.toggle('active');
+        footer.classList.toggle('active');
+        explanation.classList.toggle('disableHover');
+        arrow.classList.toggle('active');
     }
 }
 
+function preventExplanationClose(arrow) {
+    var project = arrow.closest('.project');
+    var explanation = project.querySelector('.explanation');
+    var card = project.querySelector('.card');
+    var footer = project.querySelector('.footer');
+    explanation.classList.toggle('active');
+    card.classList.toggle('active');
+    footer.classList.toggle('active');
+    explanation.classList.toggle('disableHover');
+    arrow.classList.toggle('active');
+}
+
+const modalTriggers = document.querySelectorAll(".modal-trigger");
+
+modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
+
+function toggleModal(event) {
+    const button = event.currentTarget;
+    const modalId = button.getAttribute("data-modal");
+    const modalContainer = document.querySelector(`.modal-container[data-modal="${modalId}"]`);
+    
+    if (modalContainer) {
+        modalContainer.classList.toggle("active");
+    }
+}

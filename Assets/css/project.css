@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    z-index: 1;
 }
 
 /* Styles for project cards */
@@ -13,7 +14,7 @@
     border-radius: 20px;
 }
 
-.project:hover {
+.card:hover {
     cursor: pointer;
 }
 
@@ -22,7 +23,7 @@
 }
 
 .card {
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     width: var(--project-card);
     height: var(--project-card);
@@ -42,7 +43,7 @@
 }
 
 .explanation {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     width: var(--project-card);
     height: var(--project-card);
@@ -74,11 +75,12 @@
 }
 
 .project-name {
-    font-size: calc(var(--project-card)/12.5);
+    font-size: calc(var(--project-card)/12);
 }
 
 .project-description {
-    font-size: calc(var(--project-card)/25);
+    font-size: calc(var(--project-card)/22);
+    text-align: justify;
 }
 
 .text-explanation {
@@ -86,6 +88,7 @@
     text-align: right;
     width: calc(var(--project-card)*9/10);
     padding: 10px;
+    padding-left: 20px;
 }
 
 .header {
@@ -108,7 +111,7 @@
     padding-bottom: calc(var(--project-card)/25);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
 }
 
 .footer.active {
@@ -214,15 +217,16 @@
 }
 
 .arrowBox {
+    cursor: pointer;
     text-align: center;
     width: calc(var(--project-card)/10);
 }
 
-.project:hover .arrowIcon {
+.card:hover ~ .explanation .arrowIcon, .arrowBox:hover .arrowIcon{
     animation: moveRight 1.5s infinite;
 }
 
-.project:hover .arrowIcon.active {
+.card:hover ~ .explanation .arrowIcon.active, .arrowBox:hover .arrowIcon.active{
     animation: moveLeft 1.5s infinite;
 }
 
@@ -343,28 +347,6 @@
     box-shadow: -2px -2px 3px 0px var(--bistre);
 }
 
-
-.github-tooltip {
-    position: absolute;
-    top: -14px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -20;
-    padding: 6px 12px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-  }
-  
-.group:hover .github-tooltip {
-    opacity: 1;
-}
-
 @media (max-width: 900px) {
     .title-part {
         font-size: 7.5vw;
@@ -420,14 +402,27 @@
         transform: translateY(0);
         background-color: var(--lion);
         flex-direction: column;
+        z-index: 4;
     }
 
     .text-explanation {
         height: calc(var(--project-card)*9/10);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .project:hover .arrowIcon.active {
+    .arrowBox:hover .arrowIcon.active {
         animation: moveLeft 1.5s infinite;
+    }
+
+    .project:hover>.card:not(.disableHover) {
+        box-shadow: 0px 0px 0px 0px var(--bistre);
+    }
+
+    .arrowIcon {
+        rotate: -90deg;
     }
     
     .arrowIcon.active {

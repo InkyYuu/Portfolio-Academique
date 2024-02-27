@@ -38,6 +38,9 @@
     --project-container-height: calc(var(--project-card)*1.10);
     --project-bloc-width: calc(var(--project-container-width) + calc(var(--project-card)/2));
     --project-bloc-height: calc(var(--project-container-height) + calc(var(--project-card)/5));
+
+    /* Dimension pour les modals */
+    --modal: 850px;
 }
 
 .exo-font {
