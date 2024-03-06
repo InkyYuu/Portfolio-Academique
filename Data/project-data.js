@@ -191,7 +191,6 @@ const moreExplanationTemplate = document.getElementById('more-explanation-templa
 blocData.forEach(blocData => {
 
     const allProjectsContainer = document.querySelector('.all-projects');
-    const allModals = document.querySelector('.all-modals');
 
     // Création des filtres par bloc
     const filterBloc = filterBlocTemplate.content.cloneNode(true);
