@@ -31,7 +31,6 @@ nav .nav-content {
 
 .nav-content .toggle-btn {
   font-size: 35px;
-  color: #0e2431;
   z-index: 100;
   cursor: pointer;
   transform: rotate(-225deg);
@@ -60,7 +59,6 @@ nav.open .nav-content span {
 
 .nav-content span a i {
   font-size: 24px;
-  color: #0e2431;
   transform: rotate(calc(var(--i) * (360deg/(-20/3))));
   opacity: 0.8;
   transition: 0.2s;
@@ -68,4 +66,32 @@ nav.open .nav-content span {
 
 .nav-content span a:hover i {
   opacity: 1;
+}
+
+i.btn-plus {
+  background-image: url(../img/navbar/plus.png);
+}
+
+i.btn-presentation {
+  background-image: url(../img/navbar/utilisateur.png);
+}
+
+i.btn-competences {
+  background-image: url(../img/navbar/competence.png);
+}
+
+i.btn-parcours {
+  background-image: url(../img/navbar/diplome.png);
+}
+
+i.btn-alternance {
+  background-image: url(../img/navbar/sac.png);
+}
+
+i {
+  width: 50%;
+  height: 50%;
+  background-position: center;
+  background-size: 75%;
+  background-repeat: no-repeat;
 }

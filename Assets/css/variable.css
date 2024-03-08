@@ -1,7 +1,7 @@
 :root {
     /* Couleur pour le site */
-    --viridian: #547E5E;
-    --brunswickGreen: #2B5C4A;
+    --viridian: #498d5a;
+    --brunswickGreen: #316854;
     --bistre: #35291C;
     --coffee: #6A5138;
     --rawUmber: #93704D;
@@ -31,7 +31,7 @@
     --figma4: #0ACF83;
 
     /* Dimension pour la zone projet */
-    --project-card: 500px;
+    --project-card: 25vw;
     --bloc-title: calc(var(--project-card)/5*2);
     --project-bloc-card: calc(var(--project-card)*2);
     --project-container-width: calc(var(--project-bloc-card)*1.10);
@@ -69,41 +69,17 @@ body {
     text-align: center;
     font-size: 6vw;
     color: var(--brunswickGreen);
-    text-shadow: 5px 5px 2px var(--viridian);
+    text-shadow: 4px 4px 2px var(--viridian);
 }
 
 @media (max-width: 1450px) {
     :root {
-        --project-card: 400px;
-    }
-}
-
-@media (max-width: 1250px) {
-    :root {
-        --project-card: 300px;
+        --project-card: 35vw;
     }
 }
 
 @media (max-width: 900px) {
     :root {
-        --project-card: 500px;
-    }
-}
-
-@media (max-width: 750px) {
-    :root {
-        --project-card: 400px;
-    }
-}
-
-@media (max-width: 650px) {
-    :root {
-        --project-card: 300px;
-    }
-}
-
-@media (max-width: 450px) {
-    :root {
-        --project-card: 200px;
+        --project-card: 50vw;
     }
 }
