@@ -1,6 +1,147 @@
 .all-tiles {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);  
+    grid-template-columns: repeat(6, var(--tile));
+    grid-gap: 15px;
+    grid-auto-rows: minmax(var(--tile), auto);
+    margin: auto;
+}
+
+.tile {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: var(--padding);
+    box-shadow: 5px 5px 3px var(--bistre);
+    transition: all 0.3s ease-in;
+}
+
+.link-tile {
+    text-decoration: none;
+}
+
+.link-activated:hover > .tile {
+    box-shadow: 7px 7px 5px var(--bistre);
+}
+
+.small {
+    background-color: var(--coffee);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.small .tile-icon {
+    width: 66%;
+}
+
+.small h5 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.tall {
+    background-color: var(--lion);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tall h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--coffee);
+}
+
+.tall li {
+    list-style: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--coffee);
+    font-weight: 600;
+    line-height: 2;
+    text-align: center;
+}
+
+.top {
+    width: calc(var(--tile) - calc(2 * var(--padding)));
+    height: calc(var(--tile) - calc(var(--padding)));
+    background-color: var(--khaki);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.bottom {
+    width: calc(var(--tile) - calc(2 * var(--padding)));
+    height: calc(var(--tile) - calc( var(--padding)));
+    background-color: var(--khaki);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+.tall .tile-icon {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.large {
+    background-color: var(--rawUmber);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: 95%;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    gap: 5px;
+    padding-left: 15px;
+}
+
+.large h5 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.large h6 {
+    font-size: 15px;
+    color: white;
+    width: 75%;
+}
+
+.big {
+    background-color: var(--rawUmber);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.big .tile-logo {
+    width: 66%;
+}
+
+.big h5 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.big h6 {
+    font-size: 15px;
+    color: white;
+    text-align: center;
 }

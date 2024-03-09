@@ -1,14 +1,15 @@
 :root {
     /* Couleur pour le site */
     --viridian: #498d5a;
-    --brunswickGreen: #316854;
+    --brunswickGreen: #2e6340;
     --bistre: #35291C;
     --coffee: #6A5138;
     --rawUmber: #93704D;
     --lion: #BA956F;
     --umber: #6e5944;
-    --parchment: #F4E9CD;
+    --parchment: #ad947b;
     --tan: #D2B48C;
+    --khaki: #C7B294;
 
     /* Couleur des langages de programmation */
     --html5: #E34F26;
@@ -41,6 +42,10 @@
 
     /* Dimension pour les modals */
     --modal: 850px;
+
+    /* Dimension pour les tuiles */
+    --tile: 150px;
+    --padding: 10px;
 }
 
 .exo-font {

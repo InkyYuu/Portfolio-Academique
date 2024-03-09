@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="Assets/css/project.css">
     <link rel="stylesheet" href="Assets/css/modal.css">
     <link rel="stylesheet" href="Assets/css/timeline.css">
+    <link rel="stylesheet" href="Assets/css/tile.css">
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <!-- Google Font -->
@@ -102,7 +103,7 @@
                         <source src="" type="video/mp4">
                     </video>
                     <div class="header">
-                        <a class="card-logo" href=""><img class="card-logo github-logo" src="Assets/img/github-logo.png"></a>
+                        <a class="card-logo" href=""><img class="card-logo github-logo" src="Assets/img/project/github-logo.png"></a>
                         <img class="card-logo project-logo" src="">
                     </div>
                     <div class="footer"></div>
@@ -114,7 +115,7 @@
                         <button class="modal-btn modal-trigger exo-font" data-modal="">En savoir plus</button>      
                     </div>
                     <div class="arrowBox" onclick="preventExplanationClose(this)">
-                        <img class="arrowIcon" src="Assets/img/chevron-double.png" alt="double chevron">
+                        <img class="arrowIcon" src="Assets/img/project/chevron-double.png" alt="double chevron">
                     </div>
                 </div>
             </div>
@@ -153,11 +154,53 @@
         </template>
         <!-- Template timeline bloc -->
         <template id="timeline-bloc-template">
-            <a class="link-box" target="_blank" href="">
+            <a class="link-box" target="_blank">
                 <div class="box">
                     <h5 class="exo-font"></h5>
                     <h4 class="advent-pro-font"></h4>
                     <p class="exo-font"></p>
+                </div>
+            </a>
+        </template>
+        <!-- Template small tile -->
+        <template id="small-tile-template">
+            <a class="link-tile" target="_blank">
+                <div class="small tile">
+                    <img class="tile-icon" src="">
+                    <h5 class="tile-text advent-pro-font"></h5>
+                </div>
+            </a>
+        </template>
+        <!-- Template tall tile -->
+        <template id="tall-tile-template">
+            <a class="link-tile" target="_blank">
+                <div class="tile tall">
+                    <div class="top">
+                        <img class="tile-icon" src="">
+                        <h5 class="tile-text advent-pro-font"></h5>
+                    </div>
+                    <div class="bottom">
+                        <ul class="tile-description exo-font"></ul>
+                    </div>
+                </div>
+            </a>
+        </template>
+        <!-- Template large tile -->
+        <template id="large-tile-template">
+            <a class="link-tile" target="_blank">
+                <div class="tile large">
+                    <h5 class="tile-text advent-pro-font"></h5>
+                    <h6 class="tile-description exo-font"></h6>
+                </div>
+            </a>
+        </template>
+        <!-- Template big tile -->
+        <template id="big-tile-template">
+            <a class="link-tile" target="_blank">
+                <div class="tile big">
+                    <img class="tile-icon" src="">
+                    <h5 class="tile-text advent-pro-font"></h5>
+                    <h6 class="tile-description exo-font"></h6>
                 </div>
             </a>
         </template>
@@ -169,6 +212,7 @@
     <!-- Script JS -->
     <script src="Data/project-data.js"></script>
     <script src="Data/timeline-data.js"></script>
+    <script src="Data/tile-data.js"></script>
     <script src="Assets/js/script.js"></script>
 </body>
 <!-- Credit 
@@ -179,6 +223,19 @@
     <a href="https://www.flaticon.com/fr/icones-gratuites/emoji-de-badge-verifie" title="emoji de badge vérifié icônes">Emoji de badge vérifié icônes créées par iconsax - Flaticon</a>
     <a href="https://www.flaticon.com/fr/icones-gratuites/lobtention-du-diplome" title="l'obtention du diplôme icônes">L'obtention du diplôme icônes créées par Freepik - Flaticon</a>
     <a href="https://www.flaticon.com/fr/icones-gratuites/travail" title="travail icônes">Travail icônes créées par inkubators - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/html" title="html icônes">Html icônes créées par Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/css" title="css icônes">Css icônes créées par Pixel perfect - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/javascript" title="javascript icônes">Javascript icônes créées par Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/php" title="php icônes">Php icônes créées par Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/java" title="java icônes">Java icônes créées par Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/xml" title="xml icônes">Xml icônes créées par Smashicons - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/jira" title="jira icônes">Jira icônes créées par Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/emplacement" title="emplacement icônes">Emplacement icônes créées par Dooder - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/compagnie" title="compagnie icônes">Compagnie icônes créées par Vitaly Gorbachev - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/utilisateur" title="utilisateur icônes">Utilisateur icônes créées par Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/collaboration" title="collaboration icônes">Collaboration icônes créées par Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/big-data" title="big data icônes">Big data icônes créées par juicy_fish - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/cv" title="cv icônes">Cv icônes créées par Freepik - Flaticon</a>
 -->
 
 </html>

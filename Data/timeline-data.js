@@ -58,8 +58,8 @@ timelineData.forEach(data => {
 
     data.timelineBloc.forEach(bloc => {
         const blocElement = timelineBlocTemplate.content.cloneNode(true);
-        blocElement.querySelector('a').setAttribute('href', bloc.link);
         if (bloc.link !== '#') {
+            blocElement.querySelector('a').setAttribute('href', bloc.link);
             blocElement.querySelector('a').classList.add('link-activated');
         }
         blocElement.querySelector('h5').textContent = bloc.date;

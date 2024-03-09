@@ -115,7 +115,6 @@ function disableHoverEffect(project) {
     var explanation = project.querySelector('.explanation');
     var card = project.querySelector('.card');
     githubLogo.addEventListener('mouseenter', function () {
-        console.log("enter");
         explanation.classList.add('disableHover');
         card.classList.add('disableHover');
     });
