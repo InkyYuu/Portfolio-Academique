@@ -13,6 +13,7 @@
     <!-- Sheet CSS -->
     <link rel="stylesheet" href="Assets/css/variable.css">
     <link rel="stylesheet" href="Assets/css/navbar.css">
+    <link rel="stylesheet" href="Assets/css/myself.css">
     <link rel="stylesheet" href="Assets/css/project.css">
     <link rel="stylesheet" href="Assets/css/modal.css">
     <link rel="stylesheet" href="Assets/css/timeline.css">
@@ -49,6 +50,13 @@
 
     <div class="part" id="part-presentation">
         <h1 class="title-part advent-pro-font">Présentation</h1>
+        <div class="all-sides">
+            <div class="left-side">
+                <div class="picture-profile"></div>
+                <div class="social"></div>
+            </div>
+            <div class="right-side"></div>
+        </div>
     </div>
 
     <div class="part" id="part-projects">
@@ -71,6 +79,12 @@
     </div>
 
     <div class="templates">
+        <!-- Template social button -->
+        <template id="social-button-template">
+            <a class="social-button">
+                <div class="tooltip-container"><span class="tooltip"></span></div>
+            </a>
+        </template>
         <!-- Template de bloc de projets -->
         <template id="project-bloc-template">
             <div class="projects-bloc" data-bloc="">
@@ -210,6 +224,7 @@
     <div class="all-modals"></div>
 
     <!-- Script JS -->
+    <script src="Data/myself-data.js"></script>
     <script src="Data/project-data.js"></script>
     <script src="Data/timeline-data.js"></script>
     <script src="Data/tile-data.js"></script>
@@ -236,6 +251,10 @@
     <a href="https://www.flaticon.com/fr/icones-gratuites/collaboration" title="collaboration icônes">Collaboration icônes créées par Freepik - Flaticon</a>
     <a href="https://www.flaticon.com/fr/icones-gratuites/big-data" title="big data icônes">Big data icônes créées par juicy_fish - Flaticon</a>
     <a href="https://www.flaticon.com/fr/icones-gratuites/cv" title="cv icônes">Cv icônes créées par Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/courrier" title="courrier icônes">Courrier icônes créées par Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/github" title="github icônes">Github icônes créées par Pixel perfect - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/discorde" title="discord icônes">Discord icônes créées par Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/fr/icones-gratuites/linkedin" title="linkedin icônes">Linkedin icônes créées par Freepik - Flaticon</a>
 -->
 
 </html>

@@ -162,8 +162,24 @@ function toggleModal(event) {
     const button = event.currentTarget;
     const modalId = button.getAttribute("data-modal");
     const modalContainer = document.querySelector(`.modal-container[data-modal="${modalId}"]`);
-    
+
     if (modalContainer) {
         modalContainer.classList.toggle("active");
+    }
+}
+
+function copyInClipboard(element) {
+    if (element) {
+        var valeur = element.text;
+
+        navigator.clipboard.writeText(valeur)
+            .then(function () {
+               alert("Contenu copié dans le presse-papier !");
+            })
+            .catch(function (error) {
+                alert("Erreur lors de la copie dans le presse-papiers : ", error);
+            });
+    } else {
+        alert("Élément non trouvé.");
     }
 }
