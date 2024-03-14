@@ -48,7 +48,7 @@ nav.open .toggle-btn {
 }
 
 nav.open .nav-content span {
-  transform: rotate(calc(var(--i) * (360deg/(20/3)))) translateY(-100px);
+  transform: rotate(calc(var(--i) * (360deg/8))) translateY(-100px);
   opacity: 1;
 }
 
@@ -59,7 +59,7 @@ nav.open .nav-content span {
 
 .nav-content span a i {
   font-size: 24px;
-  transform: rotate(calc(var(--i) * (360deg/(-20/3))));
+  transform: rotate(calc(var(--i) * (360deg/-8)));
   opacity: 0.8;
   transition: 0.2s;
 }
@@ -86,6 +86,10 @@ i.btn-parcours {
 
 i.btn-alternance {
   background-image: url(../img/navbar/sac.png);
+}
+
+i.btn-liens {
+  background-image: url(../img/navbar/lien.png);
 }
 
 i {

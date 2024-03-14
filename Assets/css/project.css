@@ -1,11 +1,3 @@
-.part {
-    height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    z-index: 1;
-}
-
 /* Styles for project cards */
 .project {
     position: relative;

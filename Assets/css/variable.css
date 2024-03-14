@@ -44,7 +44,7 @@
     --modal: 850px;
 
     /* Dimension pour les tuiles */
-    --tile: 150px;
+    --tile: 8vw;
     --padding: 10px;
 }
 
@@ -77,9 +77,21 @@ body {
     text-shadow: 4px 4px 2px var(--viridian);
 }
 
+.part {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1;
+}
+
 @media (max-width: 1450px) {
     :root {
         --project-card: 35vw;
+    }
+
+    .part {
+        height: auto;
     }
 }
 
