@@ -20,6 +20,25 @@ function onDrag({ movementY }) {
     }
 }
 
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks.forEach(function (navLink) {
+    navLink.addEventListener('click', function (event) {
+        event.preventDefault(); // Empêche le comportement par défaut du clic sur le lien
+
+        const targetId = this.getAttribute('href').substring(1); // Obtient l'identifiant de la cible sans le '#'
+        const targetSection = document.getElementById(targetId); // Récupère la section cible
+
+        if (targetSection) {
+            const offsetTop = targetSection.offsetTop; // Obtient la position de la section par rapport au haut de la page
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth' // Utilise un défilement en douceur
+            });
+        }
+    });
+});
+
 // Gestion des événements de souris pour le menu draggable
 nav.addEventListener("mousedown", () => {
     nav.addEventListener("mousemove", onDrag);
@@ -174,7 +193,7 @@ function copyInClipboard(element) {
 
         navigator.clipboard.writeText(valeur)
             .then(function () {
-               alert("Contenu copié dans le presse-papier !");
+                alert("Contenu copié dans le presse-papier !");
             })
             .catch(function (error) {
                 alert("Erreur lors de la copie dans le presse-papiers : ", error);

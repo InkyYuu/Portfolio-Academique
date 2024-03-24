@@ -28,7 +28,7 @@ const myDatas = [
         type: "main-info"
     }, {
         text: "Date de naissance",
-        value: "21/05/2004",
+        value: "21 Mai 2004",
         type: "main-detail"
     }, {
         text: "Localisation",

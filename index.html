@@ -5,9 +5,11 @@
     <!-- Metadatas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Kellian Bredeau"/>
-    <meta name="description" itemprop="description" content="Bienvenue sur le Portfolio d'un jeune étudiant en informatique qui rêve d'en faire son métier.">
-    <meta name="keywords" itemprop="keywords" content="portfolio, informatique, développement, BUT, Kellian, Bredeau, étudiant, développeur, game developper, études">
+    <meta name="author" content="Kellian Bredeau" />
+    <meta name="description" itemprop="description"
+        content="Bienvenue sur le Portfolio d'un jeune étudiant en informatique qui rêve d'en faire son métier.">
+    <meta name="keywords" itemprop="keywords"
+        content="portfolio, informatique, développement, BUT, Kellian, Bredeau, étudiant, développeur, game developper, études">
     <!-- Page info -->
     <title>Portfolio Home</title>
     <!-- Sheet CSS -->
@@ -18,6 +20,7 @@
     <link rel="stylesheet" href="Assets/css/modal.css">
     <link rel="stylesheet" href="Assets/css/timeline.css">
     <link rel="stylesheet" href="Assets/css/tile.css">
+    <link rel="stylesheet" href="Assets/css/credit.css">
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <!-- Google Font -->
@@ -34,65 +37,76 @@
                 <i class='btn-plus'></i>
             </div>
             <span style="--i:1;">
-                <a text="Home" href="#"><i class='btn-presentation'></i></a>
+                <a text="Home" href="#part-presentation"><i class='btn-presentation'></i></a>
             </span>
             <span style="--i:2;">
-                <a href="#"><i class='btn-competences'></i></a>
+                <a href="#part-projects"><i class='btn-competences'></i></a>
             </span>
             <span style="--i:3;">
-                <a href="#"><i class='btn-parcours'></i></a>
+                <a href="#part-timeline"><i class='btn-parcours'></i></a>
             </span>
             <span style="--i:4;">
-                <a href="#"><i class='btn-alternance'></i></a>
+                <a href="#part-alternance"><i class='btn-alternance'></i></a>
             </span>
             <span style="--i:5;">
-                <a href="#"><i class='btn-liens'></i></a>
+                <a href="#part-credits"><i class='btn-liens'></i></a>
             </span>
         </div>
     </nav>
 
-    <div class="part" id="part-presentation">
-        <h1 class="title-part advent-pro-font">Présentation</h1>
-        <div class="all-sides">
-            <div class="left-side">
-                <div class="picture-profile"></div>
-                <div class="social"></div>
-            </div>
-            <div class="right-side">
-                <div class="main-info advent-pro-font"></div>
-                <div class="main-detail exo-font"></div>
-                <div class="more-info exo-font">
-                    <div class="left-info">
-                        <div class="title-info"></div>
-                        <div class="content-info"></div>
+    <main>
+        <div class="part" id="part-presentation">
+            <h1 class="title-part advent-pro-font">Présentation</h1>
+            <div class="all-sides">
+                <div class="left-side">
+                    <div class="social"></div>
+                </div>
+                <div class="right-side">
+                    <div class="top-content">
+                        <div class="picture-profile"></div>
+                        <div class="main-content">
+                            <div class="main-info advent-pro-font"></div>
+                            <div class="main-detail exo-font"></div>
+                        </div>
                     </div>
-                    <div class="right-info">
-                        <div class="title-info"></div>
-                        <div class="content-info"></div>
+                    <div class="more-info exo-font">
+                        <div class="left-info">
+                            <div class="title-info"></div>
+                            <div class="content-info"></div>
+                        </div>
+                        <div class="right-info">
+                            <div class="title-info"></div>
+                            <div class="content-info"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="part" id="part-projects">
-        <h1 class="title-part advent-pro-font">Projets et Compétences</h1>
-        <div class="all-projects">
-            <div class="filter-bloc exo-font"></div>
+        <div class="part" id="part-projects">
+            <h1 class="title-part advent-pro-font">Projets et Compétences</h1>
+            <div class="all-projects">
+                <div class="filter-bloc exo-font"></div>
+            </div>
         </div>
-    </div>
 
-    <div class="part" id="part-timeline">
-        <h1 class="title-part advent-pro-font">Mon parcours</h1>
-        <div class="container">
-            <div class="all-timelines"></div>
+        <div class="part" id="part-timeline">
+            <h1 class="title-part advent-pro-font">Mon parcours</h1>
+            <div class="container">
+                <div class="all-timelines"></div>
+            </div>
         </div>
-    </div>
 
-    <div class="part" id="part-alternance">
-        <h1 class="title-part advent-pro-font">Alternance</h1>
-        <div class="all-tiles"></div>
-    </div>
+        <div class="part" id="part-alternance">
+            <h1 class="title-part advent-pro-font">Alternance</h1>
+            <div class="all-tiles"></div>
+        </div>
+
+        <div class="part" id="part-credits">
+            <h1 class="title-part advent-pro-font">Crédits</h1>
+            <div class="all-credits"></div>
+        </div>
+    </main>
 
     <div class="templates">
         <!-- Template social button -->
@@ -128,12 +142,13 @@
         <!-- Template de projet -->
         <template id="project-card-template">
             <div class="project" data-date="" onmouseover="disableHoverEffect(this)">
-                <div class="card"  onclick="preventExplanationOpen(this)">
+                <div class="card" onclick="preventExplanationOpen(this)">
                     <video class="background-video" autoplay loop muted>
                         <source src="" type="video/mp4">
                     </video>
                     <div class="header">
-                        <a class="card-logo" href=""><img class="card-logo github-logo" src="Assets/img/project/github-logo.png"></a>
+                        <a class="card-logo" href=""><img class="card-logo github-logo"
+                                src="Assets/img/project/github-logo.png"></a>
                         <img class="card-logo project-logo" src="">
                     </div>
                     <div class="footer"></div>
@@ -142,7 +157,7 @@
                     <div class="text-explanation">
                         <h5 class="project-name advent-pro-font"></h5><br>
                         <p class="project-description exo-font"></p><br>
-                        <button class="modal-btn modal-trigger exo-font" data-modal="">En savoir plus</button>      
+                        <button class="modal-btn modal-trigger exo-font" data-modal="">En savoir plus</button>
                     </div>
                     <div class="arrowBox" onclick="preventExplanationClose(this)">
                         <img class="arrowIcon" src="Assets/img/project/chevron-double.png" alt="double chevron">
@@ -166,7 +181,7 @@
                     <h5 class="project-name-modal advent-pro-font"></h5>
                     <div class="modal-description"></div>
                 </div>
-            </div>  
+            </div>
         </template>
         <!-- Template more explanation -->
         <template id="more-explanation-template">
@@ -234,8 +249,23 @@
                 </div>
             </a>
         </template>
+        <!-- Template crédit -->
+        <template id="credit-template">
+            <div class="credit">
+                <div class="diaporama" data-id="">
+                    <!-- Template img crédit -->
+                </div>
+                <h1 class="creator advent-pro-font"></h1>
+            </div>
+        </template>
+        <!-- Template img crédit -->
+        <template id="img-credit-template">
+            <a class="link-diaporama" href="#" text="" target="_blank">
+                <img class="img-diaporama" src="">
+            </a>
+        </template>
     </div>
-    
+
     <!-- Modals -->
     <div class="all-modals"></div>
 
@@ -244,34 +274,8 @@
     <script src="Data/project-data.js"></script>
     <script src="Data/timeline-data.js"></script>
     <script src="Data/tile-data.js"></script>
+    <script src="Data/credits-data.js"></script>
     <script src="Assets/js/script.js"></script>
 </body>
-<!-- Credit 
-    <a href="https://www.flaticon.com/fr/icones-gratuites/double-chevron" title="double chevron icônes">Double chevron icônes créées par th studio - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/plus" title="plus icônes">Plus icônes créées par Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/la-personne" title="la personne icônes">La personne icônes créées par laterunlabs - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/competences" title="compétences icônes">Compétences icônes créées par Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/emoji-de-badge-verifie" title="emoji de badge vérifié icônes">Emoji de badge vérifié icônes créées par iconsax - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/lobtention-du-diplome" title="l'obtention du diplôme icônes">L'obtention du diplôme icônes créées par Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/travail" title="travail icônes">Travail icônes créées par inkubators - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/html" title="html icônes">Html icônes créées par Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/css" title="css icônes">Css icônes créées par Pixel perfect - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/javascript" title="javascript icônes">Javascript icônes créées par Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/php" title="php icônes">Php icônes créées par Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/java" title="java icônes">Java icônes créées par Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/xml" title="xml icônes">Xml icônes créées par Smashicons - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/jira" title="jira icônes">Jira icônes créées par Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/emplacement" title="emplacement icônes">Emplacement icônes créées par Dooder - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/compagnie" title="compagnie icônes">Compagnie icônes créées par Vitaly Gorbachev - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/utilisateur" title="utilisateur icônes">Utilisateur icônes créées par Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/collaboration" title="collaboration icônes">Collaboration icônes créées par Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/big-data" title="big data icônes">Big data icônes créées par juicy_fish - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/cv" title="cv icônes">Cv icônes créées par Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/courrier" title="courrier icônes">Courrier icônes créées par Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/github" title="github icônes">Github icônes créées par Pixel perfect - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/discorde" title="discord icônes">Discord icônes créées par Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/linkedin" title="linkedin icônes">Linkedin icônes créées par Freepik - Flaticon</a>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/lien" title="lien icônes">Lien icônes créées par Freepik - Flaticon</a>
--->
 
 </html>
