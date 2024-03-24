@@ -52,7 +52,7 @@ const tilesData = [
     },{
         text: "Mon CV",
         image: "cv",
-        link: "../Assets/files/cv-bredeau-kellian.pdf",
+        link: "Assets/files/cv-bredeau-kellian.pdf",
         type: "small",
         row: "4",
         column: "6"
