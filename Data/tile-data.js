@@ -123,7 +123,7 @@ const tileBigTemplate = document.getElementById('big-tile-template');
 // Remplissage des tuiles en fonction du type
 tilesData.forEach(tile => {
     let template;
-    let assets = "../Assets/img/tile/"
+    let assets = "Assets/img/tile/"
     switch (tile.type) {
         case 'small':
             template = tileSmallTemplate.content.cloneNode(true);

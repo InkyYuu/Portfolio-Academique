@@ -51,7 +51,7 @@ const myDatas = [
     }
 ]
 
-const assets = "../Assets/img/myself/";
+const assets = "Assets/img/myself/";
 const socialButtonTemplate = document.getElementById("social-button-template");
 const socialButtonContainer = document.querySelector(".social");
 

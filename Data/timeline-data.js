@@ -12,7 +12,7 @@ const timelineData = [
                 date: "Février 2022",
                 title: "Certification PIX",
                 description: "Obtenue avec 395 points pix",
-                link: "./Assets/files/attestation-pix-20220218.pdf"
+                link: "Assets/files/attestation-pix-20220218.pdf"
             },
             {
                 date: "Juin 2022",

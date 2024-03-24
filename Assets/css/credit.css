@@ -5,6 +5,7 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     margin: auto;
+    gap: 25px;
 }
 
 .credit {

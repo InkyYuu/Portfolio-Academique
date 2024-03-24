@@ -129,7 +129,7 @@ const creditsData = [
     }
 ]
 
-const assetsFolder = "../Assets/img/"
+const assetsFolder = "Assets/img/"
 
 const creditTemplate = document.getElementById('credit-template');
 const imgCreditTemplate = document.getElementById('img-credit-template');
