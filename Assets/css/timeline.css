@@ -21,7 +21,7 @@
 
 .timeline-column .timeline-title {
     font-size: 30px;
-    color: var(--viridian);
+    color: var(--font-white);
     padding: 0px 0px 20px 0px;
     text-align: center;
     text-transform: uppercase;
@@ -51,7 +51,7 @@
 }
 
 .timeline-column .all-timelines-bloc .link-activated:hover .box {
-    box-shadow: 0px 3px 12px 0px var(--coffee);
+    box-shadow: 0px 3px 12px 0px var(--oxford-blue);
 }
 
 .timeline-column .all-timelines-bloc .box::before {
@@ -62,14 +62,14 @@
     border-radius: 50%;
     right: calc(100% + 22px);
     top: 0;
-    background-color: var(--viridian);
+    background-color: var(--palatinate-blue);
     border: 2px solid white;
 }
 
 .box h5 {
     font-size: 18px;
     position: relative;
-    color: var(--rawUmber);
+    color: var(--yale-blue);
     line-height: 1;
 }
 
@@ -77,12 +77,12 @@
     font-size: 21px;
     padding: 10px 0px 8px;
     font-family: helvetica;
-    color: var(--coffee);
+    color: var(--oxford-blue);
 }
 
 .box p {
     line-height: 1.2;
-    color: var(--lion);
+    color: var(--palatinate-blue);
     font-size: 15px;
     font-weight: 600;
 }

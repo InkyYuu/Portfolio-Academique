@@ -113,8 +113,20 @@ const creditsData = [
                 img: "project/pmp/pmp-logo.png"
             }, {
                 link: "mailto:lna.chevalier@gmail.com",
+                title: "PMP Icone",
+                img: "project/pmp/pmp-icone.png"
+            }, {
+                link: "mailto:lna.chevalier@gmail.com",
                 title: "LA Logo",
                 img: "project/la/la-logo.png"
+            }, {
+                link: "mailto:lna.chevalier@gmail.com",
+                title: "LA Icone",
+                img: "project/la/la-icone.png"
+            }, {
+                link: "mailto:lna.chevalier@gmail.com",
+                title: "Chillzone Logo",
+                img: "project/chillzone/chillzone-colored.png"
             }
         ]
     },{

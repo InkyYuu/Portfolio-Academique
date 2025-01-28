@@ -22,11 +22,6 @@
     border-radius: 20px;
     overflow: hidden;
     transition: all 0.5s ease;
-    box-shadow: -2px -2px 3px 0px var(--bistre);
-}
-
-.project:hover>.card:not(.disableHover) {
-    box-shadow: 5px 0px 3px 0px var(--bistre);
 }
 
 .card.active {
@@ -39,7 +34,7 @@
     position: absolute;
     width: var(--project-card);
     height: var(--project-card);
-    background-color: var(--umber);
+    background-color: var(--oxford-blue);
     border-radius: 20px;
     transition: all 0.5s ease;
     display: flex;
@@ -50,7 +45,7 @@
 .explanation.active {
     transform: translateX(calc(calc(var(--project-card)/2) - calc(var(--project-card)/10)));
     width: calc(var(--project-card)*1.10);
-    background-color: var(--lion);
+    background-color: var(--deep-blue);
 }
 
 .background-video {
@@ -76,7 +71,7 @@
 }
 
 .text-explanation {
-    color: var(--coffee);
+    color: var(--font-white);
     text-align: right;
     width: calc(var(--project-card)*9/10);
     padding: 10px;
@@ -98,7 +93,7 @@
     bottom: 0;
     display: flex;
     justify-content: space-around;
-    background-color: var(--lion);
+    background-color: var(--deep-blue);
     padding-top: calc(var(--project-card)/25);
     padding-bottom: calc(var(--project-card)/25);
     border-bottom-left-radius: 20px;
@@ -111,7 +106,7 @@
 }
 
 .card-logo {
-    border-radius: 40%;
+    border-radius: 50%;
     width: calc(var(--project-card)/8);
     height: calc(var(--project-card)/8);
 }
@@ -126,7 +121,7 @@
 }
 
 .tag {
-    color: var(--coffee);
+    color: var(--font-black);
     height: calc(var(--project-card)/10);
     width: calc(var(--project-card)/4);
     display: flex;
@@ -184,6 +179,10 @@
     background-color: var(--serveur);
 }
 
+.react {
+    background-color: var(--react);
+}
+
 @keyframes moveRight {
 
     0%,
@@ -234,7 +233,7 @@
 /* Project block styles */
 .projects-bloc {
     margin: auto;
-    background-color: var(--coffee);
+    background-color: var(--oxford-blue);
     width: var(--project-bloc-width);
     height: var(--project-bloc-height);
     display: flex;
@@ -242,7 +241,6 @@
     align-items: center;
     justify-content: left;
     border-radius: 20px;
-    box-shadow: -2px -2px 3px 0px var(--bistre);
 }
 
 .rotate-title {
@@ -263,14 +261,13 @@
 .projects-container {
     width: var(--project-container-width);
     height: var(--project-container-height);
-    background-color: var(--rawUmber);
+    background-color: var(--yale-blue);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
     border-radius: 20px;
-    box-shadow: -2px -2px 3px 0px var(--bistre);
 }
 
 .filter-date {
@@ -292,7 +289,7 @@
 
 .filter-bouton-date {
     color: white;
-    background-color: var(--rawUmber);
+    background-color: var(--yale-blue);
     width: calc(var(--project-container-width)/8);
     font-size: calc(var(--project-container-width)/64);
     height: calc(var(--project-container-height)/11);
@@ -311,13 +308,10 @@
     filter: brightness(0.8);
 }
 
-.filter-bouton-date.active {
-    box-shadow: -2px -2px 3px 0px var(--bistre);
-}
 
 .filter-bouton-bloc {
     color: white;
-    background-color: var(--coffee);
+    background-color: var(--oxford-blue);
     width: calc(var(--project-bloc-width)/8);
     font-size: calc(var(--project-container-width)/64);
     height: calc(var(--project-container-height)/11);
@@ -333,10 +327,6 @@
 .filter-bouton-bloc:not(.active) {
     opacity: 0.8;
     filter: brightness(0.8);
-}
-
-.filter-bouton-bloc.active {
-    box-shadow: -2px -2px 3px 0px var(--bistre);
 }
 
 @media (max-width: 900px) {
@@ -385,14 +375,14 @@
 
     .card.active {
         transform: translateY(0px);
-        background-color: var(--lion);
+        background-color: var(--deep-blue);
         opacity: 0;
     }
 
     .explanation.active {
         width: var(--project-card);
         transform: translateY(0);
-        background-color: var(--lion);
+        background-color: var(--deep-blue);
         flex-direction: column;
         z-index: 4;
     }
@@ -407,10 +397,6 @@
 
     .arrowBox:hover .arrowIcon.active {
         animation: moveLeft 1.5s infinite;
-    }
-
-    .project:hover>.card:not(.disableHover) {
-        box-shadow: 0px 0px 0px 0px var(--bistre);
     }
 
     .arrowIcon {

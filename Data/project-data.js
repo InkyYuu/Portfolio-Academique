@@ -30,10 +30,25 @@ const blocData = [
                 explanation: "💳🏦 PimpMyPaids est un portail Web spécialisé pour permettre aux clients, qu'ils soient des entreprises ou des commerçants, de consulter leurs comptes et de suivre leurs transactions financières quotidiennes.",
                 moreExplanation: [
                     ["AC21.1 - Elaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences","Les spécifications fonctionnelles ont été élaborées en collaboration avec les parties prenantes, détaillant la consultation de comptes et le suivi des transactions. Les spécifications non fonctionnelles, telles que la sécurité et les performances, ont également été prises en compte."],
-                    ["AC21.2 Appliquer des principes d'accessibilité et d'ergonomie","L'interface utilisateur a été conçue pour être conviviale et accessible, répondant aux normes d'ergonomie et d'accessibilité Web pour garantir une expérience utilisateur optimale pour tous."],
+                    ["AC21.2 - Appliquer des principes d'accessibilité et d'ergonomie","L'interface utilisateur a été conçue pour être conviviale et accessible, répondant aux normes d'ergonomie et d'accessibilité Web pour garantir une expérience utilisateur optimale pour tous."],
                     ["AC21.3 - Adopter des bonnes pratiques de conception et de programmation","Des bonnes pratiques de conception et de programmation ont été suivies tout au long du projet, assurant la maintenabilité du code et l'utilisation de frameworks établis pour une efficacité accrue."],
                     ["AC21.4 - Vérifier et valider la qualité de l'application par les tests","La qualité de l'application a été vérifiée à l'aide de tests unitaires, d'intégration et d'acceptation, garantissant un fonctionnement fiable avant le déploiement et assurant ainsi une expérience utilisateur fluide."]
                 ]
+            },
+            {
+                id: "1-3",
+                title: "ChillZone - Mon IUT",
+                date: "2024 - 2025",
+                videoSource: "Assets/img/project/default/in-development.mp4",
+                githubLink: "https://github.com/FC-Zen/ChillZone",
+                projectLogo: "Assets/img/project/chillzone/chillzone-colored.png",
+                tags: ["React", "Python", "Figma"],
+                explanation: "🎓📱 ChillZone est une application pour simplifier la vie des étudiants : réservez salles, box acoustiques ou repas en un clic, consultez votre emploi du temps et repérez-vous facilement sur le campus. Administrateurs et pros gèrent tout via un backoffice intuitif !",
+                moreExplanation: [
+                    ["AC31.1 - Choisir et implémenter les architectures adaptées", "Le projet repose sur une architecture moderne et modulaire combinant React pour le front-end et Python pour le back-end, le tout interconnecté via une API REST. Cette approche garantit une flexibilité pour l’ajout de nouvelles fonctionnalités et une scalabilité adaptée à un usage intensif par de nombreux étudiants et administrateurs."],
+                    ["AC31.2 - Faire évoluer une application existante", "Le développement de ChillZone s’inscrit dans une logique d’évolution continue, intégrant des fonctionnalités inédites comme la réservation de box acoustiques, la gestion des emplois du temps et une navigation interactive. Ces ajouts montrent la capacité à adapter et enrichir l’application en fonction des retours utilisateurs et des nouvelles exigences institutionnelles."],
+                    ["AC31.3 - Intégrer des solutions dans un environnement de production", "Le projet a été conçu avec une attention particulière à l’intégration en production, incluant des pipelines d’intégration et de déploiement continus (CI/CD). Les tests unitaires et d’intégration garantissent une stabilité optimale, tandis que l’environnement de production a été préparé pour accueillir l’application avec des configurations spécifiques à la gestion des utilisateurs et des ressources du campus."]
+                ]        
             }
         ]
     },
@@ -71,6 +86,21 @@ const blocData = [
                     ["AC22.3 - Comprendre les enjeux et moyens de sécurisation des données et du code", "Le module PHP du projet se concentre sur la sécurisation des données et du code. Nous avons pris des mesures pour protéger les données des utilisateurs et optimiser la sécurité des requêtes. En comprenant les enjeux de sécurité, nous avons mis en place des mesures appropriées pour garantir l'intégrité et la confidentialité des données du jeu."],
                     ["AC22.4 - Evaluer l'impact environnemental et sociétal des solutions proposées", "Nous avons évalué l'impact environnemental et sociétal de notre solution en veillant à optimiser les performances et à minimiser la consommation de ressources. En concevant des structures de données efficaces et en utilisant des algorithmes optimisés, nous avons réduit l'empreinte environnementale de notre projet tout en offrant une expérience de jeu enrichissante pour les utilisateurs."]
                 ]
+            },
+            {
+                id: "2-3",
+                title: "ChillZone - Mon IUT",
+                date: "2024 - 2025",
+                videoSource: "Assets/img/project/default/in-development.mp4",
+                githubLink: "https://github.com/FC-Zen/ChillZone",
+                projectLogo: "Assets/img/project/chillzone/chillzone-colored.png",
+                tags: ["React", "Python"],
+                explanation: "🎓📱 ChillZone est une application pour simplifier la vie des étudiants : réservez salles, box acoustiques ou repas en un clic, consultez votre emploi du temps et repérez-vous facilement sur le campus. Administrateurs et pros gèrent tout via un backoffice intuitif !",
+                moreExplanation: [
+                    ["AC32.1 - Anticiper les résultats de diverses métriques (temps d’exécution, occupation mémoire, montée en charge...)", "Le projet a intégré dès le début une analyse approfondie des performances pour anticiper des scénarios critiques comme les pics de connexions à certaines heures. Par exemple, les réservations de box ou les commandes en click and collect sont optimisées pour garantir des temps de réponse rapides même en période de forte affluence. Des tests de montée en charge ont permis d’identifier les goulots d’étranglement et d’ajuster la gestion des ressources serveur pour une expérience utilisateur fluide."],
+                    ["AC32.2 - Profiler, analyser et justifier le comportement d’un code existant", "Grâce à des outils de profiling comme PyCharm et React Developer Tools, le comportement du code a été analysé en détail pour identifier les points de ralentissement. Cette démarche a permis d’optimiser des sections critiques, comme le traitement des requêtes pour les réservations ou l’affichage dynamique des emplois du temps. Les justifications des optimisations, documentées dans Jira, montrent une approche rigoureuse et expliquent clairement les choix effectués pour équilibrer performances et complexité du code."],
+                    ["AC32.3 - Choisir et utiliser des bibliothèques et méthodes dédiées au domaine d'application (imagerie, immersion, intelligence artificielle, jeux vidéos, parallélisme, calcul formel...)", "Le choix des bibliothèques a été orienté vers des outils adaptés aux besoins spécifiques de l'application : React pour une interface utilisateur réactive et fluide, et Django pour un back-end robuste capable de gérer des requêtes complexes. Des outils comme Leaflet.js pour la cartographie interactive du campus et pandas pour la gestion des données ont été intégrés, répondant à des cas d’utilisation précis comme la navigation intuitive et la gestion efficace des emplois du temps."]
+                ]                  
             }
         ]
     },
@@ -174,6 +204,22 @@ const blocData = [
                     ["AC26.3 - Mobiliser les compétences interpersonnelles pour travailler dans une équipe informatique", "En définissant des rôles précis et en favorisant la communication et la coopération, nous avons travaillé de manière collaborative pour atteindre les objectifs du projet."],
                     ["AC26.4 - Rendre compte de son activité professionnelle", "Nous avons maintenu une documentation claire tout au long du projet, favorisant la traçabilité des actions et des décisions prises, contribuant ainsi à la qualité globale du projet."]
                 ]
+            },
+            {
+                id: "6-3",
+                title: "ChillZone - Mon IUT",
+                date: "2024 - 2025",
+                videoSource: "Assets/img/project/default/in-development.mp4",
+                githubLink: "https://github.com/FC-Zen/ChillZone",
+                projectLogo: "Assets/img/project/chillzone/chillzone-colored.png",
+                tags: ["React", "Python", "Jira"],
+                explanation: "🎓📱 ChillZone est une application pour simplifier la vie des étudiants : réservez salles, box acoustiques ou repas en un clic, consultez votre emploi du temps et repérez-vous facilement sur le campus. Administrateurs et pros gèrent tout via un backoffice intuitif !",
+                moreExplanation: [
+                    ["AC36.1 - Organiser et partager une veille technologique et informationnelle", "Le projet repose sur l’utilisation de technologies modernes comme React et Python, nécessitant une veille technologique active pour suivre leurs évolutions et nouvelles fonctionnalités. La méthode Agile, avec des sprints organisés sur Jira, favorise le partage structuré des découvertes et la communication efficace entre les membres de l’équipe."],
+                    ["AC36.2 - Identifier les enjeux de l’économie de l’innovation numérique", "ChillZone s’inscrit dans un contexte où les solutions numériques répondent à des besoins croissants d’optimisation et de simplification du quotidien. En offrant des fonctionnalités comme la réservation numérique et le click and collect, l'application illustre comment l’innovation numérique améliore l’expérience des utilisateurs tout en apportant de la valeur aux établissements."],
+                    ["AC36.3 - Guider la conduite du changement informatique au sein d’une organisation", "Avec des fonctionnalités intuitives et adaptées, l’application aide les établissements à intégrer de nouvelles pratiques numériques. Les utilisateurs, qu’ils soient étudiants ou administrateurs, bénéficient d’une adoption facilitée grâce à un design pensé pour réduire les frictions lors du changement de système."],
+                    ["AC36.4 - Accompagner le management de projet informatique", "La gestion de projet est structurée autour de la méthode Agile, où les tâches sont organisées et suivies via Jira. Cette approche permet une répartition claire des responsabilités, un suivi précis de l’avancement et une collaboration étroite au sein de l’équipe, garantissant une progression fluide du projet."]
+                ]                          
             }
         ]
     }

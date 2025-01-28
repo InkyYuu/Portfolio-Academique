@@ -1,15 +1,13 @@
 :root {
     /* Couleur pour le site */
-    --viridian: #498d5a;
-    --brunswickGreen: #2e6340;
-    --bistre: #35291C;
-    --coffee: #6A5138;
-    --rawUmber: #93704D;
-    --lion: #BA956F;
-    --umber: #6e5944;
-    --parchment: #ad947b;
-    --tan: #D2B48C;
-    --khaki: #C7B294;
+    --eerie-black: #1b1b1b;
+    --oxford-blue: #192539;
+    --yale-blue: #2a3f60;
+    --deep-blue: #1F2E47;
+    --palatinate-blue: #3238eb;
+    --white-smoke: #f2f2f2;
+    --font-white: #ffffff;
+    --font-black: #000000;
 
     /* Couleur des langages de programmation */
     --html5: #E34F26;
@@ -22,7 +20,6 @@
     --sql2: #0070BA;
     --python1: #3776AB;
     --python2: #FFD43B;
-    --csharp: #68217A;
     --serveur: #79ba00;
     --github: #1b1b1b;
     --jira: #0052CC;
@@ -30,6 +27,7 @@
     --figma2: #1ABCFE;
     --figma3: #A259FF;
     --figma4: #0ACF83;
+    --react: #61DAFB;
 
     /* Dimension pour la zone projet */
     --project-card: 25vw;
@@ -67,14 +65,13 @@
 }
 
 body {
-    background-color: #C7B294;
+    background-color: var(--eerie-black);
 }
 
 .title-part {
     text-align: center;
     font-size: 6vw;
-    color: var(--brunswickGreen);
-    text-shadow: 4px 4px 2px var(--viridian);
+    color: var(--font-white);
 }
 
 .part {
