@@ -105,7 +105,7 @@
 }
 
 .title-competence {
-    font-size: calc(75% + 0.6vw);
+    font-size: calc(75% + 0.45vw);
     font-weight: 700;
     margin-left: 5%;
     margin-right: 5%;
@@ -113,8 +113,17 @@
 }
 
 .description-competence {
-    font-size: calc(55% + 0.5vw);
+    font-size: calc(55% + 0.35vw);
     text-align: justify;
     margin-left: 8%;
     margin-right: 8%;
+    font-weight: 400;
+}
+
+.auto-evaluation {
+    font-size: calc(55% + 0.75vw);
+    text-align: justify;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 10px;
 }

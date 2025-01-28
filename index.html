@@ -34,22 +34,22 @@
     <nav>
         <div class="nav-content">
             <div class="toggle-btn">
-                <i class='btn-plus'></i>
+                <i text="Navigation" class='btn-plus'></i>
             </div>
             <span style="--i:1;">
-                <a text="Home" href="#part-presentation"><i class='btn-presentation'></i></a>
+                <a text="Accueil" href="#part-presentation"><i class='btn-presentation'></i></a>
             </span>
             <span style="--i:2;">
-                <a href="#part-projects"><i class='btn-competences'></i></a>
+                <a text="Projets" href="#part-projects"><i class='btn-competences'></i></a>
             </span>
             <span style="--i:3;">
-                <a href="#part-timeline"><i class='btn-parcours'></i></a>
+                <a text="Parcours" href="#part-timeline"><i class='btn-parcours'></i></a>
             </span>
             <span style="--i:4;">
-                <a href="#part-alternance"><i class='btn-alternance'></i></a>
+                <a text="Alternance" href="#part-alternance"><i class='btn-alternance'></i></a>
             </span>
             <span style="--i:5;">
-                <a href="#part-credits"><i class='btn-liens'></i></a>
+                <a text="Crédits" href="#part-credits"><i class='btn-liens'></i></a>
             </span>
         </div>
     </nav>
@@ -147,8 +147,7 @@
                         <source src="" type="video/mp4">
                     </video>
                     <div class="header">
-                        <a class="card-logo" href=""><img class="card-logo github-logo"
-                                src="Assets/img/project/github-logo.png"></a>
+                        <a class="card-logo github-logo" href=""></a>
                         <img class="card-logo project-logo" src="">
                     </div>
                     <div class="footer"></div>
@@ -187,6 +186,16 @@
         <template id="more-explanation-template">
             <div class="more-explanation">
                 <li class="title-competence advent-pro-font"></li>
+                <div class="auto-evaluation exo-font">
+                    <h6>Auto-évaluation sur la compétence :</h6>
+                    <div class="stars">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
+                </div>
                 <p class="description-competence exo-font"></p>
             </div>
         </template>

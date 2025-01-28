@@ -44,8 +44,8 @@ const myDatas = [
         value: ["Développeur jeux-vidéo", "Développeur logiciel", "Professeur d'informatique"],
         type: "more-left"
     }, {
-        text: "Qualités",
-        title: "Qualités",
+        text: "Savoirs-être",
+        title: "Savoirs-être",
         value: ["Perfectionniste", "Attentif", "Curieux"],
         type: "more-right"
     }
