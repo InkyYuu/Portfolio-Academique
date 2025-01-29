@@ -105,25 +105,43 @@
 }
 
 .title-competence {
-    font-size: calc(75% + 0.45vw);
+    font-size: calc(75% + 0.55vw);
     font-weight: 700;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 1%;
 }
 
+.auto-evaluation {
+    text-align: justify;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 10px;
+    display: flex;  
+    gap: 5px;
+    align-items: center;
+}
+
+.auto-evaluation > h6 {
+    font-size: calc(45% + 0.50vw);
+    font-weight: 600;
+}
+
 .description-competence {
-    font-size: calc(55% + 0.35vw);
+    font-size: calc(45% + 0.45vw);
     text-align: justify;
     margin-left: 8%;
     margin-right: 8%;
     font-weight: 400;
 }
 
-.auto-evaluation {
-    font-size: calc(55% + 0.75vw);
-    text-align: justify;
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-bottom: 10px;
+.stars {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.stars > .star {
+    width: 16px;
+    height: 16px;
 }

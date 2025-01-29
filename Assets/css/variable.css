@@ -78,9 +78,8 @@ body {
     height: 100vh; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     z-index: 1;
-    gap: 50px;
 }
 
 @media (max-width: 1450px) {
